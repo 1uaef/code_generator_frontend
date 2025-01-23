@@ -15,7 +15,8 @@ export default [
     access: 'canAdmin',
     routes: [
       { path: '/admin', redirect: '/admin/user' },
-      { icon: 'table', path: '/admin/user', component: './Admin/User', name: '用户管理' },
+      { icon: "user", path: '/admin/user', component: './Admin/User', name: '用户管理' },
+      { icon: "user", path: '/admin/generator', component: './Admin/Generator', name: '生成器管理' },
     ],
   },
   { path: '/', redirect: '/welcome' },
