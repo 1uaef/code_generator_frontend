@@ -7,7 +7,9 @@ export default [
       { path: '/user/register', component: './User/Register' },
     ],
   },
-  { path: '/', icon: 'smile', component: './Index', name: '主页' },
+  { path: '/', icon: 'home', component: './Index', name: '主页' },
+  { path: '/file', icon: 'file', component: './File', name: '文件上传下载' },
+  { path: '/generator', icon: 'code', component: './Generator/Add', name: '代码生成器' },
   {
     path: '/admin',
     icon: 'crown',

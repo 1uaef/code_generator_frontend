@@ -9,7 +9,7 @@ const { Search } = Input;
 // 定义收索参数
 const DEFAULT_SEARCH_PARAMS: PageRequest = {
   current: 1,
-  pageSize: 10,
+  pageSize: 4,
   sortField: 'createTime',
   sortOrder: 'descend',
 };
