@@ -2,10 +2,8 @@ import type { UploadProps } from 'antd';
 import { Button, Card, Divider, Flex, Image, message, Upload } from 'antd';
 import React, { useState } from 'react';
 
-import {
-  testDownloadFileUsingGet,
-  testUploadFileUsingPost,
-} from '@/services/backend/fileController';
+// @ts-ignore
+import {testDownloadFileUsingGet, testUploadFileUsingPost,} from '@/services/backend/fileController';
 import { InboxOutlined } from '@ant-design/icons';
 import { saveAs } from 'file-saver';
 

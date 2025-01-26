@@ -9,7 +9,25 @@ export default [
   },
   { path: '/', icon: 'home', component: './Index', name: '主页' },
   { path: '/file', icon: 'file', component: './File', name: '文件上传下载' },
-  { path: '/generator', icon: 'code', component: './Generator/Add', name: '代码生成器' },
+  { path: '/generator',
+    icon: 'code',
+    component: './Generator/Add',
+    name: '代码生成器'
+  },
+  {
+    path: '/generator/update',
+    icon: 'plus',
+    component: './Generator/Add',
+    name: '修改生成器',
+    hideInMenu: true,
+  },
+  {
+    path: '/generator/detail/:id',
+    icon: 'plus',
+    component: './Generator/Detail',
+    name: '生成器详情',
+    hideInMenu: true,
+  },
   {
     path: '/admin',
     icon: 'crown',
@@ -17,8 +35,13 @@ export default [
     access: 'canAdmin',
     routes: [
       { path: '/admin', redirect: '/admin/user' },
-      { icon: "user", path: '/admin/user', component: './Admin/User', name: '用户管理' },
-      { icon: "user", path: '/admin/generator', component: './Admin/Generator', name: '生成器管理' },
+      { icon: 'user', path: '/admin/user', component: './Admin/User', name: '用户管理' },
+      {
+        icon: 'user',
+        path: '/admin/generator',
+        component: './Admin/Generator',
+        name: '生成器管理',
+      },
     ],
   },
   { path: '/', redirect: '/welcome' },
